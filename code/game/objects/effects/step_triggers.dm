@@ -22,7 +22,7 @@
 /* Tosses things in a certain direction */
 
 /obj/effect/step_trigger/thrower
-	var/direction = SOUTH // the direction of throw
+	var/direction = SOUTH // the direction of throwItm
 	var/tiles = 3	// if 0: forever until atom hits a stopper
 	var/immobilize = 1 // if nonzero: prevents mobs from moving while they're being flung
 	var/speed = 1	// delay of movement

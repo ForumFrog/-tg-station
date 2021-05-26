@@ -24,11 +24,11 @@
 		if(dna)
 			if(dna.mutantrace == "lizard")
 				if(copytext(message, 1, 2) != "*")
-					message = replacetext(message, "s", stutter("ss"))
+					message = replaceText(message, "s", stutter("ss"))
 
 			if(dna.mutantrace == "fly")
 				if(copytext(message, 1, 2) != "*")
-					message = replacetext(message, "z", stutter("zz"))
+					message = replaceText(message, "z", stutter("zz"))
 
 			/*if(dna.mutantrace == "slime" && prob(5))
 				if(copytext(message, 1, 2) != "*")
@@ -59,7 +59,7 @@
 
 		if ((HULK in mutations) && health >= 25 && length(message))
 			if(copytext(message, 1, 2) != "*")
-				message = "[uppertext(replacetext(message, ".", "!"))]!!" //because I don't know how to code properly in getting vars from other files -Bro
+				message = "[uppertext(replaceText(message, ".", "!"))]!!" //because I don't know how to code properly in getting vars from other files -Bro
 
 	..(message)
 
@@ -71,7 +71,7 @@
 			var/temp = winget(client, "input", "text")
 			if(findtextEx(temp, "Say \"", 1, 7) && length(temp) > 5)	//case sensitive means
 
-				temp = replacetext(temp, ";", "")	//general radio
+				temp = replaceText(temp, ";", "")	//general radio
 
 				if(findtext(trim_left(temp), ":", 6, 7))	//dept radio
 					temp = copytext(trim_left(temp), 8)

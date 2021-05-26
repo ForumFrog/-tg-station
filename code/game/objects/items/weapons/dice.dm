@@ -47,7 +47,7 @@
 
 /obj/item/weapon/dice/d20
 	name = "d20"
-	desc = "A die with twenty sides. The prefered die to throw at the GM."
+	desc = "A die with twenty sides. The prefered die to throwItm at the GM."
 	icon_state = "d20"
 	sides = 20
 
@@ -71,7 +71,7 @@
 		result = (result - 1)*10
 	if(user != null) //Dice was rolled in someone's hand
 		user.visible_message("<span class='notice'>[user] has thrown [src]. It lands on [result]. [comment]</span>", \
-							 "<span class='notice'>You throw [src]. It lands on [result]. [comment]</span>", \
+							 "<span class='notice'>You throwItm [src]. It lands on [result]. [comment]</span>", \
 							 "<span class='notice'>You hear [src] landing on [result]. [comment]</span>")
 	else if(src.throwing == 0) //Dice was thrown and is coming to rest
 		src.loc.visible_message("<span class='notice'>[src] rolls to a stop, landing on [result]. [comment]</span>")

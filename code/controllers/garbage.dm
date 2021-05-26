@@ -117,7 +117,7 @@ var/list/uncollectable_vars=list(
 			var/variable = everything.vars[everyvar]
 			if(variable == src)
 				testing("Found [src.type] \ref[src] in [everything.type]'s [everyvar] var.")
-			else if(islist(variable))
+			else if(isList(variable))
 				if(src in variable)
 					testing("Found [src.type]\ref[src] in [everything.type]'s [everyvar] var.")
 	for(var/atom/movable/everything) //The slow part.
@@ -125,7 +125,7 @@ var/list/uncollectable_vars=list(
 			var/variable = everything.vars[everyvar]
 			if(variable == src)
 				testing("Found [src.type] \ref[src] in [everything.type]'s [everyvar] var.")
-			else if(islist(variable))
+			else if(isList(variable))
 				if(src in variable)
 					testing("Found [src.type]\ref[src] in [everything.type]'s [everyvar] var.")
 */

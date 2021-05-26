@@ -745,7 +745,7 @@
 						if(AM)
 							AM.throw_at(target, 100, 1)
 
-		else	// no specified direction, so throw in random direction
+		else	// no specified direction, so throwItm in random direction
 
 			playsound(src, 'sound/machines/hiss.ogg', 50, 0, 0)
 			if(H)

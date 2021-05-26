@@ -1180,8 +1180,12 @@
 						client.screen += global_hud.darkMask
 
 			if(blind)
-				if(blinded)		blind.layer = 18
-				else			blind.layer = 0
+				if(blinded)
+					//blind.layer = 18
+					blind.plane = 0
+				else
+					//blind.layer = 0
+					blind.plane = -80
 
 			if( disabilities & NEARSIGHTED && !istype(glasses, /obj/item/clothing/glasses/regular) )
 				client.screen += global_hud.vimpaired

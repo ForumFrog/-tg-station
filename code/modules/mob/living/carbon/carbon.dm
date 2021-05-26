@@ -286,7 +286,7 @@
 
 	if(istype(item, /obj/item/weapon/grab))
 		var/obj/item/weapon/grab/G = item
-		item = G.throw() //throw the person instead of the grab
+		item = G.throwItm() //throwItm the person instead of the grab
 		qdel(G)			//We delete the grab, as it needs to stay around until it's returned.
 		if(ismob(item))
 			var/turf/start_T = get_turf(loc) //Get the start and target tile for the descriptors
@@ -305,7 +305,7 @@
 	if(src.client)
 		src.client.screen -= item
 
-	//actually throw it!
+	//actually throwItm it!
 	if(item)
 		item.layer = initial(item.layer)
 		src.visible_message("\red [src] has thrown [item].")

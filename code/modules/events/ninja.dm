@@ -877,30 +877,30 @@ That is why you attached them to objects.
 
 //Alternate ninja speech replacement.
 /*This text is hilarious but also absolutely retarded.
-message = replacetext(message, "l", "r")
-message = replacetext(message, "rr", "ru")
-message = replacetext(message, "v", "b")
-message = replacetext(message, "f", "hu")
-message = replacetext(message, "'t", "")
-message = replacetext(message, "t ", "to ")
-message = replacetext(message, " I ", " ai ")
-message = replacetext(message, "th", "z")
-message = replacetext(message, "ish", "isu")
-message = replacetext(message, "is", "izu")
-message = replacetext(message, "ziz", "zis")
-message = replacetext(message, "se", "su")
-message = replacetext(message, "br", "bur")
-message = replacetext(message, "ry", "ri")
-message = replacetext(message, "you", "yuu")
-message = replacetext(message, "ck", "cku")
-message = replacetext(message, "eu", "uu")
-message = replacetext(message, "ow", "au")
-message = replacetext(message, "are", "aa")
-message = replacetext(message, "ay", "ayu")
-message = replacetext(message, "ea", "ii")
-message = replacetext(message, "ch", "chi")
-message = replacetext(message, "than", "sen")
-message = replacetext(message, ".", "")
+message = replaceText(message, "l", "r")
+message = replaceText(message, "rr", "ru")
+message = replaceText(message, "v", "b")
+message = replaceText(message, "f", "hu")
+message = replaceText(message, "'t", "")
+message = replaceText(message, "t ", "to ")
+message = replaceText(message, " I ", " ai ")
+message = replaceText(message, "th", "z")
+message = replaceText(message, "ish", "isu")
+message = replaceText(message, "is", "izu")
+message = replaceText(message, "ziz", "zis")
+message = replaceText(message, "se", "su")
+message = replaceText(message, "br", "bur")
+message = replaceText(message, "ry", "ri")
+message = replaceText(message, "you", "yuu")
+message = replaceText(message, "ck", "cku")
+message = replaceText(message, "eu", "uu")
+message = replaceText(message, "ow", "au")
+message = replaceText(message, "are", "aa")
+message = replaceText(message, "ay", "ayu")
+message = replaceText(message, "ea", "ii")
+message = replaceText(message, "ch", "chi")
+message = replaceText(message, "than", "sen")
+message = replaceText(message, ".", "")
 message = lowertext(message)
 */
 
@@ -1102,7 +1102,7 @@ This could be a lot better but I'm too tired atm.*/
 	var/C = 50
 	if(!ninjacost(C))
 		var/mob/living/carbon/human/U = affecting
-		var/targets[] = list()//So yo can shoot while yo throw dawg
+		var/targets[] = list()//So yo can shoot while yo throwItm dawg
 		for(var/mob/living/M in oview(loc))
 			if(M.stat)	continue//Doesn't target corpses or paralyzed persons.
 			targets.Add(M)

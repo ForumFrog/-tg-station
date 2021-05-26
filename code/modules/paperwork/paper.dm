@@ -164,40 +164,40 @@
 
 //	t = copytext(sanitize(t),1,MAX_MESSAGE_LEN)
 
-	t = replacetext(t, "\[center\]", "<center>")
-	t = replacetext(t, "\[/center\]", "</center>")
-	t = replacetext(t, "\[br\]", "<BR>")
-	t = replacetext(t, "\[b\]", "<B>")
-	t = replacetext(t, "\[/b\]", "</B>")
-	t = replacetext(t, "\[i\]", "<I>")
-	t = replacetext(t, "\[/i\]", "</I>")
-	t = replacetext(t, "\[u\]", "<U>")
-	t = replacetext(t, "\[/u\]", "</U>")
-	t = replacetext(t, "\[large\]", "<font size=\"4\">")
-	t = replacetext(t, "\[/large\]", "</font>")
-	t = replacetext(t, "\[sign\]", "<font face=\"[signfont]\"><i>[user.real_name]</i></font>")
-	t = replacetext(t, "\[field\]", "<span class=\"paper_field\"></span>")
+	t = replaceText(t, "\[center\]", "<center>")
+	t = replaceText(t, "\[/center\]", "</center>")
+	t = replaceText(t, "\[br\]", "<BR>")
+	t = replaceText(t, "\[b\]", "<B>")
+	t = replaceText(t, "\[/b\]", "</B>")
+	t = replaceText(t, "\[i\]", "<I>")
+	t = replaceText(t, "\[/i\]", "</I>")
+	t = replaceText(t, "\[u\]", "<U>")
+	t = replaceText(t, "\[/u\]", "</U>")
+	t = replaceText(t, "\[large\]", "<font size=\"4\">")
+	t = replaceText(t, "\[/large\]", "</font>")
+	t = replaceText(t, "\[sign\]", "<font face=\"[signfont]\"><i>[user.real_name]</i></font>")
+	t = replaceText(t, "\[field\]", "<span class=\"paper_field\"></span>")
 
 	if(!iscrayon)
-		t = replacetext(t, "\[*\]", "<li>")
-		t = replacetext(t, "\[hr\]", "<HR>")
-		t = replacetext(t, "\[small\]", "<font size = \"1\">")
-		t = replacetext(t, "\[/small\]", "</font>")
-		t = replacetext(t, "\[list\]", "<ul>")
-		t = replacetext(t, "\[/list\]", "</ul>")
+		t = replaceText(t, "\[*\]", "<li>")
+		t = replaceText(t, "\[hr\]", "<HR>")
+		t = replaceText(t, "\[small\]", "<font size = \"1\">")
+		t = replaceText(t, "\[/small\]", "</font>")
+		t = replaceText(t, "\[list\]", "<ul>")
+		t = replaceText(t, "\[/list\]", "</ul>")
 
 		t = "<font face=\"[deffont]\" color=[P.colour]>[t]</font>"
 	else // If it is a crayon, and he still tries to use these, make them empty!
-		t = replacetext(t, "\[*\]", "")
-		t = replacetext(t, "\[hr\]", "")
-		t = replacetext(t, "\[small\]", "")
-		t = replacetext(t, "\[/small\]", "")
-		t = replacetext(t, "\[list\]", "")
-		t = replacetext(t, "\[/list\]", "")
+		t = replaceText(t, "\[*\]", "")
+		t = replaceText(t, "\[hr\]", "")
+		t = replaceText(t, "\[small\]", "")
+		t = replaceText(t, "\[/small\]", "")
+		t = replaceText(t, "\[list\]", "")
+		t = replaceText(t, "\[/list\]", "")
 
 		t = "<font face=\"[crayonfont]\" color=[P.colour]><b>[t]</b></font>"
 
-//	t = replacetext(t, "#", "") // Junk converted to nothing!
+//	t = replaceText(t, "#", "") // Junk converted to nothing!
 
 //Count the fields
 	var/laststart = 1
@@ -252,7 +252,7 @@
 			return
 
 		t = parsepencode(t, i, usr, iscrayon) // Encode everything from pencode to html
-		
+
 		if(t != null)	//No input from the user means nothing needs to be added
 			if(id!="end")
 				addtofield(text2num(id), t) // He wants to edit a field, let him.

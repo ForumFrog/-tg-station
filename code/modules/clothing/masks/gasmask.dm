@@ -212,12 +212,12 @@
 				temp_message[H] = ninjaspeak(temp_message[H])
 				pick_list -= H
 			message = list2text(temp_message, " ")
-			message = replacetext(message, "o", "¤")
-			message = replacetext(message, "p", "þ")
-			message = replacetext(message, "l", "£")
-			message = replacetext(message, "s", "§")
-			message = replacetext(message, "u", "µ")
-			message = replacetext(message, "b", "ß")
+			message = replaceText(message, "o", "¤")
+			message = replaceText(message, "p", "þ")
+			message = replaceText(message, "l", "£")
+			message = replaceText(message, "s", "§")
+			message = replaceText(message, "u", "µ")
+			message = replaceText(message, "b", "ß")
 	return message
 
 

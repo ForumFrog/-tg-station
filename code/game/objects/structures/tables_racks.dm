@@ -112,7 +112,7 @@
 	density = 1
 	anchored = 1.0
 	layer = 2.8
-	throwpass = 1	//You can throw objects over this, despite it's density.")
+	throwpass = 1	//You can throwItm objects over this, despite it's density.")
 	var/parts = /obj/item/weapon/table_parts
 	var/list/table_contents = list()
 	var/busy = 0
@@ -668,7 +668,7 @@ Destroy type values:
 	icon_state = "rack"
 	density = 1
 	anchored = 1.0
-	throwpass = 1	//You can throw objects over this, despite it's density.
+	throwpass = 1	//You can throwItm objects over this, despite it's density.
 
 /obj/structure/rack/ex_act(severity)
 	switch(severity)

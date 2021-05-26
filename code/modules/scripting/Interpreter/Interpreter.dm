@@ -182,7 +182,7 @@
 		RunFunction(node/statement/FunctionCall/stmt)
 			//Note that anywhere /node/statement/FunctionCall/stmt is used so may /node/expression/FunctionCall
 
-			// If recursion gets too high (max 50 nested functions) throw an error
+			// If recursion gets too high (max 50 nested functions) throwItm an error
 			if(cur_recursion >= max_recursion)
 				AlertAdmins()
 				RaiseError(new/runtimeError/RecursionLimitReached())

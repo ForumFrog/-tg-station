@@ -23,7 +23,7 @@ proc
     ////////////////////
     // Replacing text //
     ////////////////////
-	dd_replacetext(text, search_string, replacement_string)
+	dd_replaceText(text, search_string, replacement_string)
 		// A nice way to do this is to split the text into an array based on the search_string,
 		// then put it back together into text using replacement_string as the new separator.
 		var/list/textList = dd_text2list(text, search_string)
@@ -40,12 +40,12 @@ proc
 	/////////////////////
 	dd_hasprefix(text, prefix)
 		var/start = 1
-		var/end = lentext(prefix) + 1
+		var/end = length(prefix) + 1
 		return findtext(text, prefix, start, end)
 
 	dd_hasPrefix(text, prefix)
 		var/start = 1
-		var/end = lentext(prefix) + 1
+		var/end = length(prefix) + 1
 		return findtextEx(text, prefix, start, end)
 
 
@@ -64,8 +64,8 @@ proc
 	// Turning text into lists //
 	/////////////////////////////
 	dd_text2list(text, separator)
-		var/textlength      = lentext(text)
-		var/separatorlength = lentext(separator)
+		var/textlength      = length(text)
+		var/separatorlength = length(separator)
 		var/list/textList   = new /list()
 		var/searchPosition  = 1
 		var/findPosition    = 1
@@ -84,8 +84,8 @@ proc
 					return textList
 
 	dd_text2List(text, separator)
-		var/textlength      = lentext(text)
-		var/separatorlength = lentext(separator)
+		var/textlength      = length(text)
+		var/separatorlength = length(separator)
 		var/list/textList   = new /list()
 		var/searchPosition  = 1
 		var/findPosition    = 1

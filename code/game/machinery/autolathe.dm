@@ -254,9 +254,9 @@ var/global/list/autolathe_recipes_hidden = list( \
 			objs += src.LL
 		for(var/obj/t in objs)
 			if(disabled || m_amount<t.m_amt || g_amount<t.g_amt)
-				dat += replacetext("<span class='linkOff'>[t]</span>", "The ", "")
+				dat += replaceText("<span class='linkOff'>[t]</span>", "The ", "")
 			else
-				dat += replacetext("<a href='?src=\ref[src];make=\ref[t]'>[t]</a>", "The ", "")
+				dat += replaceText("<a href='?src=\ref[src];make=\ref[t]'>[t]</a>", "The ", "")
 
 			if(istype(t, /obj/item/stack))
 				var/obj/item/stack/S = t

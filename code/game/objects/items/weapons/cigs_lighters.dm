@@ -554,7 +554,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	else
 		var/obj/item/weapon/rollingpaper/P = new /obj/item/weapon/rollingpaper(user.loc)
 		user.put_in_inactive_hand(P)
-		user << "You take the last paper out of the pack, and throw the pack away."
+		user << "You take the last paper out of the pack, and throwItm the pack away."
 		qdel(src)
 
 /obj/item/weapon/rollingpaperpack/examine()

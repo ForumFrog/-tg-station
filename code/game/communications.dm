@@ -316,7 +316,7 @@ var/list/pointers = list()
 		. = "signal = {source = '[source]' ()\n"
 	for (var/i in data)
 		. += "data\[\"[i]\"\] = \"[data[i]]\"\n"
-		if(islist(data[i]))
+		if(isList(data[i]))
 			var/list/L = data[i]
 			for(var/t in L)
 				. += "data\[\"[i]\"\] list has: [t]"

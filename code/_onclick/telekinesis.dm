@@ -56,7 +56,7 @@ var/const/tk_maxrange = 15
 	TK Grab Item (the workhorse of old TK)
 
 	* If you have not grabbed something, do a normal tk attack
-	* If you have something, throw it at the target.  If it is already adjacent, do a normal attackby()
+	* If you have something, throwItm it at the target.  If it is already adjacent, do a normal attackby()
 	* If you click what you are holding, or attack_self(), do an attack_self_tk() on it.
 	* Deletes itself if it is ever not in your hand, or if you should have no access to TK.
 */
@@ -150,7 +150,7 @@ var/const/tk_maxrange = 15
 
 
 	proc/focus_object(var/obj/target, var/mob/living/user)
-		if(!istype(target,/obj))	return//Cant throw non objects atm might let it do mobs later
+		if(!istype(target,/obj))	return//Cant throwItm non objects atm might let it do mobs later
 		if(target.anchored || !isturf(target.loc))
 			qdel(src)
 			return

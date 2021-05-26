@@ -105,7 +105,7 @@
 
 	var/error = tdist_x/2 - tdist_y
 	while(target && (((((dist_x > dist_y) && ((src.x < target.x && dx == EAST) || (src.x > target.x && dx == WEST))) || ((dist_x <= dist_y) && ((src.y < target.y && dy == NORTH) || (src.y > target.y && dy == SOUTH))) || (src.x > target.x && dx == WEST)) && dist_travelled < range) || !has_gravity(src)))
-		// only stop when we've gone the whole distance (or max throw range) and are on a non-space tile, or hit something, or hit the end of the map, or someone picks it up
+		// only stop when we've gone the whole distance (or max throwItm range) and are on a non-space tile, or hit something, or hit the end of the map, or someone picks it up
 		if(!src.throwing) break
 		if(!istype(src.loc, /turf)) break
 

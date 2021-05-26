@@ -196,7 +196,7 @@ proc/make_mining_asteroid_secret()
 			new surprise(T)//here's the prize
 			emptyturfs -= T
 
-			while(areapoints >= 10)//lets throw in the fluff items
+			while(areapoints >= 10)//lets throwItm in the fluff items
 				T = pick(emptyturfs)
 				var/garbage = null
 				garbage = pickweight(fluffitems)

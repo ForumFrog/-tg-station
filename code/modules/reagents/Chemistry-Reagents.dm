@@ -192,7 +192,7 @@ datum
 			reaction_mob(var/mob/M, var/method=TOUCH, var/volume)
 				var/datum/reagent/vaccine/self = src
 				src = null
-				if(islist(self.data) && method == INGEST)
+				if(isList(self.data) && method == INGEST)
 					for(var/datum/disease/D in M.viruses)
 						if(D.GetDiseaseID() in self.data)
 							D.cure()

@@ -115,7 +115,7 @@
 	return 1
 /*
 	Aside: throwpass does not do what I thought it did originally, and is only used for checking whether or not
-	a thrown object should stop after already successfully entering a square.  Currently the throw code involved
+	a thrown object should stop after already successfully entering a square.  Currently the throwItm code involved
 	only seems to affect hitting mobs, because the checks performed against objects are already performed when
 	entering or leaving the square.  Since throwpass isn't used on mobs, but only on objects, it is effectively
 	useless.  Throwpass may later need to be removed and replaced with a passcheck (bitfield on movable atom passflags).
